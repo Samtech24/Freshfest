@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Freshfest</title>
+	<meta charset="UTF-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  	<link rel="icon" type="image/png" sizes="32x32" href="images/logo.png">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" type="text/javascript"></script>
+</head>
+<body>
+	<header>
+	    <div id="heading">
+	 
+	      	<img id="logo" src="images/logo.png">
+	      	<div>
+	      		<h1> Freshfest </h1>
+	      		<p>everyday freshness...</p>
+	      	</div>
+	      
+	      	<nav class="nav" >
+		        <ul>
+		          <li> <a href="#Features" onclick="showHome()"> Home </a>>> </li>
+		          <li><a href="#Team" onclick="showSignup()"> Sign Up </a> >> </li> 
+		          <li> <a href="#Sign-in" onclick="showLogin()"> Login </a> </li> 
+		        </ul>
+		        <div class="menu" id="menu">
+		        	<img src="images/menu-icon.svg" >
+			        <div id="menu-nav">
+			        	<ul>
+			          <li> >><a href="#Features" onclick="showHome()"> Home </a></li>
+			          <li> >><a href="#Team" onclick="showSignup()"> Sign Up </a> </li> 
+			          <li> >><a href="#Sign-in" onclick="showLogin()"> Login </a> </li> 
+			        </ul>
+			        </div>
+		        </div>
+
+	      </nav>
+	    </div>
+  	</header>
+	<div class="section">
+		<div class="form" id="signup">
+	  		<h2>Sign up</h2>
+	  		<form>
+	  			<div class="formInput">
+	  				<label>Username</label>
+	  				<input type="text" name="Username" id="customerUserName">
+	  				<p class="error" id="userNameError"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Fullname</label>
+	  				<input type="text" name="Fullname"id="customerName">
+	  				<p class="error" id="nameError" ></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Email Address</label>
+	  				<input type="text" name="email" id="customerEmail"> <i></i>
+	  				<p class="error" id="emailError"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Phone Number</label>
+	  				<input type="Number" name="phoneNumber" placeholder="Your Phone number" id="customerNumber">
+	  				<p class="error" id="numberError"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Gender</label>
+	  				<div id="gender" >
+	  				<input type="radio" name="Gender"> Male
+	  				
+	  				<input type="radio" name="Gender" > Female
+	  				</div>
+	  				<p class="error"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Password</label>
+	  				<input type="password" name="password" placeholder="password" id="customerPassword">
+	  				<p id="passwordError" class="error"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Confirm Password</label>
+	  				<input type="password" name="password" placeholder="password" id="customerConfirmPassword">
+	  				<p id="confirmPasswordError" class="error"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<button onclick="validateForm()"> Submit </button>
+	  			</div>
+
+	  		</form>
+		</div>
+		
+		<div class="form" id="login">
+	  		<h2>Login</h2>
+	  		<form>
+	  			<div class="formInput">
+	  				<label>Email Address</label>
+	  				<input type="text" name="email" id="customerLoginEmail">
+	  				<p class="error" id="loginEmailError"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<label>Password</label>
+	  				<input type="password" name="password" placeholder="password" id="customerLoginPassword">
+	  				<p class="error" id="loginPasswordError"></p>
+	  			</div>
+	  			<div class="formInput">
+	  				<button onclick="validateLoginForm()"> Submit </button>
+	  			</div>
+
+	  		</form>
+		</div>
+	</div>
+
+	<div class="bg">
+		<h1> Order Your Fresh Fruits <br> And Vegetables</h1>
+		<img src="images/bg-fruit.png">
+	</div>
+
+
+</body>
+</html>

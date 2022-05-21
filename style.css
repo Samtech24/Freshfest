@@ -1,0 +1,179 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  color: #D9FF00;
+}
+
+#heading {
+  background-color: #0C6A37;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+#logo {
+  width: 45px;
+  margin: 20px;
+  box-shadow: 0px 0px 5px 2px #D9FF00;
+  border-radius: 100px;
+}
+
+h1 {
+  font-family: cursive;
+}
+
+.nav {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: flex; 
+}
+
+.nav ul li {
+  padding: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: #D9FF00;
+}
+
+#menu {
+  position: relative;
+  top: 0px;
+  right: 50px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background-color: #0C6A37;
+  display: none;
+}
+
+#menu-nav {
+  display: none;
+}
+
+.menu ul {
+  padding: ;
+  display: flex;
+  flex-flow: column;
+  align-items: flex-start;
+}
+
+#menu img {
+  width: 45px;
+  height: 45px;
+  display: ;
+}
+
+
+body {
+  max-width: 100vw;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section {
+
+}
+
+.form {
+  background: #0C6A37;
+  margin: 2rem 0rem;
+  padding: 3px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-flow: wrap column;
+  font-size: 1.5em;
+  cursor: pointer;
+  font-family: cursive;
+
+}
+
+.bg {
+  z-index: -2;
+  position: absolute;
+  bottom: 20px;
+  width: 85vw;
+}
+
+.bg h1 {
+    z-index: -1;
+   color: #0C6A37;
+   width: 85vw;
+   box-shadow: 0px 0px 5px 2px #D9FF00;
+}
+
+.bg img {
+   width: 85vw;
+}
+
+
+.formInput {
+  display: flex;
+  flex-flow: column;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px;
+  margin: 0em 5em;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding: 0.5em;
+}
+
+input {
+  color: #000000;
+  border-radius: 10px;
+  border: 1px inset yellow;
+  height: 1.5em;
+  margin: 5px;
+}
+
+
+#gender {
+  display: flex;
+  align-items: center;
+}
+
+.error {
+  color: red;
+  font-size: 1em;
+}
+
+button {
+  background-color: #D9FF00;
+  border-radius: 20px;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+}
+
+
+#signup {
+  z-index: 1;
+}
+
+#login {
+  z-index: 2;
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  display: none;
+}
